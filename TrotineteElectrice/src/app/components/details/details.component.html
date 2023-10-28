@@ -1,0 +1,9 @@
+<div *ngIf="scooterDetails">
+    <img [src]="scooterDetails.imageUrl" alt="{{ scooterDetails.name }}">
+    <h2>{{ scooterDetails.name }}</h2>
+    <p><strong>Maximum Weight:</strong> {{ scooterDetails.weightsupported }}</p>
+    <p><strong>Status:</strong> {{ scooterDetails.status }}</p>
+    <p><strong>Battery:</strong> {{ scooterDetails.energy }}</p>
+  </div>
+  <app-map></app-map> 
+  

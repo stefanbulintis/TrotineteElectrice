@@ -1,0 +1,59 @@
+/* home.component.css */
+
+.background-image {
+    position: relative;
+    background-image: url('../../../assets/home-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Aliniere la stânga */
+    padding-left: 20px; /* Spațiu la marginea stângă */
+  }
+  
+  .background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajustează aici opacitatea (0.5 reprezintă 50%) și culoarea de acoperire (aici, negru) */
+  }
+  
+ /* home.component.css */
+
+.button-container {
+    position: absolute;
+    top: 70%;
+    left: 50px; /* Spațiu la marginea stângă pentru a muta butonul spre dreapta */
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  
+  .button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #06c9fa;
+    color: #fff;
+  }
+  
+  h3 {
+    margin: 0;
+    color: #fff;
+    z-index: 2;
+    padding-left: 20px; /* Spațiu la marginea stângă pentru textul h3 */
+  }
+  

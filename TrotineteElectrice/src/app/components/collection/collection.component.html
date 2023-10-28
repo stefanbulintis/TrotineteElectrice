@@ -1,0 +1,12 @@
+
+  <div class="card" style="width: 18rem;">
+    <div class="card" *ngFor="let image of collectionImages">
+        <img [src]="image.url">
+      <div class="card-body">
+        <h5 class="card-title">Scooter {{ image.id }}</h5>
+        <p class="card-text">WERD {{ image.id }}</p>
+        <button type="button" class="btn btn-info" (click)="redirectToDetailsPage(image.id)">Details about this scooter</button>
+      </div>
+  </div>
+
+  
