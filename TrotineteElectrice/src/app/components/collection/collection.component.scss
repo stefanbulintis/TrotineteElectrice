@@ -1,17 +1,7 @@
-.image-container {
+
+.card {
+    justify-content: center;
     display: flex; /* Afișează imaginile într-un container flexibil. */
-    flex-wrap: nowrap; /* Previne ruperea la rând nou. */
-    overflow-x: auto; /* Adaugă o bară de derulare orizontală dacă e nevoie. */
-    gap: 10px; /* Adaugă un spațiu între imaginile individuale. */
-  }
-  
-  .image-item {
-    flex: 0 0 auto; /* Imaginea nu se va extinde pentru a umple spațiul disponibil. */
-  }
-  
-  .image-item img {
-    max-width: 100%; /* Imaginile vor avea lățime maximă de 100%. */
-    height: auto; /* Păstrează raportul de aspect al imaginilor. */
-    cursor: pointer; /* Afișează un cursor de mână pentru a indica faptul că imaginile sunt interactive. */
+    gap: 30px; /* Adaugă un spațiu între imaginile individuale. */
   }
   

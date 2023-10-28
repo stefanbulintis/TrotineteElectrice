@@ -8,6 +8,8 @@ import { ServicesService } from 'src/app/services.service';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
+
+
 export class DetailsComponent {
   scooterDetails: any; 
   private map: L.Map;
@@ -39,5 +41,7 @@ export class DetailsComponent {
         .addTo(this.map)
         .bindPopup(this.scooterDetails.name); 
     }
+    
+    
   }
 }
